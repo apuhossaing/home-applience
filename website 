@@ -1,0 +1,243 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Essentials - Online Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #e6f4ea;
+      color: #333;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    nav {
+      background-color: #1b5e20;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .slider {
+      background-color: #c8e6c9;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+    .slider p {
+      display: inline-block;
+      padding-left: 100%;
+      animation: slide 15s linear infinite;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    .hero {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+    }
+    .products, .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .product-card, .testimonial-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+    .product-card:hover, .testimonial-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img, .testimonial-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .buy-button {
+      background-color: #2e7d32;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .buy-button:hover {
+      background-color: #1b5e20;
+    }
+    .featured-offer {
+      background-color: #c8e6c9;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .featured-offer h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .featured-offer p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .payment-methods {
+      background-color: #a5d6a7;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .payment-methods img {
+      width: 100px;
+      margin: 10px;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .contact {
+      font-size: 18px;
+    }
+    /* Live Chat Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+    .whatsapp-float i {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Home Essentials</h1>
+  <p>Your trusted online store for electric home appliances</p>
+</header>
+
+<div class="slider">
+  <p>Special Offer: Buy 2 items & get 10% OFF | Free Delivery on Orders Over 5000 Tk | Call: 01736822434</p>
+</div>
+
+<nav>
+  <a href="#products">Products</a>
+  <a href="#featured">Offer</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>Upgrade Your Home Today!</h1>
+  <p>High-quality Blenders, Egg Beaters, Hotpots, Kettles, Mini Sewing Machines, and more.</p>
+</section>
+
+<section id="products" class="products">
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x200?text=Blender" alt="Blender">
+    <h3>Blender</h3>
+    <p>Durable, powerful, and perfect for your kitchen needs.</p>
+    <a class="buy-button" href="https://wa.me/8801736822434?text=I%20want%20to%20buy%20a%20Blender" target="_blank">Buy Now</a>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x200?text=Egg+Beater" alt="Egg Beater">
+    <h3>Egg Beater</h3>
+    <p>Make baking effortless with our easy-to-use egg beaters.</p>
+    <a class="buy-button" href="https://wa.me/8801736822434?text=I%20want%20to%20buy%20an%20Egg%20Beater" target="_blank">Buy Now</a>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x200?text=Hotpot" alt="Hotpot">
+    <h3>Hotpot</h3>
+    <p>Keep your food hot and fresh with our stylish hotpots.</p>
+    <a class="buy-button" href="https://wa.me/8801736822434?text=I%20want%20to%20buy%20a%20Hotpot" target="_blank">Buy Now</a>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x200?text=Kettle" alt="Kettle">
+    <h3>Electric Kettle</h3>
+    <p>Fast-boil kettles with auto shut-off for safety and convenience.</p>
+    <a class="buy-button" href="https://wa.me/8801736822434?text=I%20want%20to%20buy%20an%20Electric%20Kettle" target="_blank">Buy Now</a>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x200?text=Mini+Sewing+Machine" alt="Mini Sewing Machine">
+    <h3>Mini Sewing Machine</h3>
+    <p>Perfect for quick repairs and small sewing projects.</p>
+    <a class="buy-button" href="https://wa.me/8801736822434?text=I%20want%20to%20buy%20a%20Mini%20Sewing%20Machine" target="_blank">Buy Now</a>
+  </div>
+</section>
+
+<section id="featured" class="featured-offer">
+  <h2>Special Offer!</h2>
+  <p>Buy 2 Items & Get 10% Discount! Limited Time Offer!</p>
+  <a class="buy-button" href="https://wa.me/8801736822434?text=I%20am%20interested%20in%20the%20Special%20Offer" target="_blank">Grab Now</a>
+</section>
+
+<section class="payment-methods">
+  <h2>Payment Methods</h2>
+  <img src="https://i.ibb.co/gd9vX2k/bkash-logo.png" alt="bKash Payment">
+  <img src="https://i.ibb.co/M8cVVkw/nagad-logo.png" alt="Nagad Payment">
+  <img src="https://i.ibb.co/s6BNkPc/rocket-logo.png" alt="Rocket Payment">
+</section>
+
+<section class="testimonials">
+  <div class="testimonial-card">
+    <img src="https://via.placeholder.com/300x200?text=Happy+Customer" alt="Happy Customer">
+    <h3>Jahanara Begum</h3>
+    <p>"Excellent service! Got my blender within 2 days and it's amazing quality!"</p>
+  </div>
+  <div class="testimonial-card">
+    <img src="https://via.placeholder.com/300x200?text=Happy+Customer" alt="Happy Customer">
+    <h3>Abdul Karim</h3>
+    <p>"Very professional and fast delivery. Highly recommended for home appliances."</p>
+  </div>
+</section>
+
+<footer id="contact">
+  <h2>Contact Us</h2>
+  <p class="contact">Call: 01736822434 | 01558013131</p>
+  <p>We deliver across Bangladesh!</p>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/8801736822434" class="whatsapp-float" target="_blank">
+  <i>💬</i>
+</a>
+
+</body>
+</html>
